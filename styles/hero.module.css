@@ -7,3 +7,9 @@
   font-size: clamp(1.2rem, 2vw, 1.75rem);
   line-height: 2rem;
 }
+.displayPic {
+  background: url('../public/assets/bg.png');
+  background-size: clamp(40rem, 50vw, 80rem);
+  background-repeat: no-repeat;
+  background-position: center;
+}
