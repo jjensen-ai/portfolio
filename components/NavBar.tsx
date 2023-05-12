@@ -2,24 +2,31 @@ import styles from '@/styles/navBar.module.css';
 import { useState } from 'react';
 
 export default function NavBar() {
-  const [animate, setAnimate] = useState(false);
+  const [brandAnimate, setBrandAnimate] = useState(false);
+  const [brandReverse, setBrandReverse] = useState(false);
 
   return (
     <div className='flex flex-row mt-2 justify-between w-auto px-10 items-center'>
       <div>
         <div
           className={`flex relative`}
-          onMouseEnter={() => setAnimate(true)}
-          onMouseLeave={() => setAnimate(false)}>
+          onMouseEnter={() => setBrandAnimate(true)}
+          onMouseLeave={() => {
+            setBrandReverse(true), setBrandAnimate(false);
+          }}>
           <div
             className={`text-[3rem] font-black ${styles.textStroke} ${
-              animate && styles.svgAnimation
+              brandAnimate
+                ? styles.textUp
+                : brandReverse && styles.textDownEmpty
             }`}>
             j
           </div>
           <div
-            className={`text-[3rem] font-black ${styles.textStroke} ${
-              animate && styles.svgDown
+            className={`text-[3rem] ml-[4px] font-black ${styles.textStroke} ${
+              brandAnimate
+                ? styles.textDown
+                : brandReverse && styles.textUpEmpty
             }`}>
             j
           </div>

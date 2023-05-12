@@ -13,11 +13,17 @@
   color: transparent;
 }
 
-.svgAnimation {
-  animation: slideUpFill ease-out 0.75s forwards;
+.textUp {
+  animation: slideUpFill ease-in 0.75s forwards;
 }
-.svgDown {
-  animation: slideDownFill ease-out 0.75s forwards;
+.textDown {
+  animation: slideDownFill ease-in 0.75s forwards;
+}
+.textDownEmpty {
+  animation: slideDownEmpty ease-out 0.75s;
+}
+.textUpEmpty {
+  animation: slideUpEmpty ease-out 0.75s;
 }
 
 @keyframes slideUpFill {
@@ -45,5 +51,34 @@
   100% {
     transform: translateY(0);
     color: #ffffff;
+  }
+}
+
+@keyframes slideDownEmpty {
+  0% {
+    transform: translateY(0);
+    color: #fff;
+  }
+  50% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    color: transparent;
+  }
+}
+@keyframes slideUpEmpty {
+  0% {
+    transform: translateY(0);
+    color: #fff;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    color: transparent;
   }
 }
