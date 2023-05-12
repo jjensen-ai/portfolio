@@ -1,0 +1,9 @@
+.name {
+  font-size: clamp(4rem, 12vw, 8rem);
+  line-height: clamp(45px, 8vw, 90px);
+  font-weight: 900;
+}
+.tagLine {
+  font-size: clamp(1.2rem, 2vw, 1.75rem);
+  line-height: 2rem;
+}

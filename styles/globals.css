@@ -25,3 +25,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+* {
+  box-sizing: border-box;
+  @apply font-excon;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Excon';
+    src: url('../public/fonts/Excon-Variable.woff2');
+  }
+}

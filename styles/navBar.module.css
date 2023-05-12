@@ -1,0 +1,49 @@
+.svgStyle {
+  font-size: 48px;
+  stroke: #ffffff;
+  paint-order: stroke;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  font-weight: 900;
+}
+
+.textStroke {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+
+.svgAnimation {
+  animation: slideUpFill ease-out 0.75s forwards;
+}
+.svgDown {
+  animation: slideDownFill ease-out 0.75s forwards;
+}
+
+@keyframes slideUpFill {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    color: #ffffff;
+  }
+}
+
+@keyframes slideDownFill {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    color: #ffffff;
+  }
+}
