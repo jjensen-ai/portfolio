@@ -1,11 +1,5 @@
-.svgStyle {
-  font-size: 48px;
-  stroke: #ffffff;
-  paint-order: stroke;
-  stroke-width: 3px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  font-weight: 900;
+.navBar {
+  background: black;
 }
 
 .textStroke {

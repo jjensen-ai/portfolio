@@ -6,7 +6,8 @@ export default function NavBar() {
   const [brandReverse, setBrandReverse] = useState(false);
 
   return (
-    <div className='flex flex-row mt-2 justify-between w-auto px-10 items-center'>
+    <div
+      className={`flex flex-row justify-between w-auto px-10 items-center ${styles.navBar}`}>
       <div>
         <div
           className={`flex relative`}
@@ -36,16 +37,16 @@ export default function NavBar() {
       <div className='w-[20rem]'>
         <ul className='flex flex-row justify-evenly'>
           <li>
-            <a className='tracking-wider'>Home</a>
+            <a className='tracking-wider text-white'>Home</a>
           </li>
           <li>
-            <a className='tracking-wider'>About</a>
+            <a className='tracking-wider text-white'>About</a>
           </li>
           <li>
-            <a className='tracking-wider'>Work</a>
+            <a className='tracking-wider text-white'>Work</a>
           </li>
           <li>
-            <a className='tracking-wider'>Contact</a>
+            <a className='tracking-wider text-white'>Contact</a>
           </li>
         </ul>
       </div>

@@ -2,5 +2,9 @@ import Home from './Home';
 import styles from '@/styles/content.module.css';
 
 export default function Content() {
-  return <Home />;
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 }

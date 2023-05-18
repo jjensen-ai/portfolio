@@ -9,9 +9,13 @@
 }
 .displayPic {
   background: url('../public/assets/bg.png');
+  background-color: black;
   background-size: clamp(40rem, 50vw, 80rem);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  z-index: 10;
+}
+
+.slanted {
+  clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
 }
