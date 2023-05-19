@@ -1,6 +1,6 @@
 .name {
-  font-size: clamp(4rem, 12vw, 8rem);
-  line-height: clamp(45px, 8vw, 90px);
+  font-size: clamp(5rem, 12vw, 8rem);
+  line-height: clamp(58px, 8vw, 90px);
   font-weight: 900;
 }
 .tagLine {
@@ -17,5 +17,5 @@
 }
 
 .slanted {
-  clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
+  clip-path: polygon(0 0, 1600px 0, 1600px 85%, 0 100%);
 }

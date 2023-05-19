@@ -6,14 +6,12 @@ import LinkedInIcon from '@/public/icons/LinkedInIcon';
 export default function Hero() {
   return (
     <div
-      className={`flex flex-col w-full h-[52rem] relative text-white ${styles.displayPic} ${styles.slanted}`}>
-      <div className='flex mt-[2rem] px-12'>
-        <div className='mt-4'>
-          <h1 className={`${styles.tagLine}`}>Developer</h1>
-          <h1 className={`${styles.tagLine}`}>UX UI Enthusiast</h1>
-        </div>
+      className={`flex flex-col w-screen md:h-[52rem] h-[48rem] md:px-[5rem] px-[3rem] md:pb-[14rem] pb-[8rem] text-white justify-between ${styles.displayPic} ${styles.slanted}`}>
+      <div className='flex flex-col mt-10'>
+        <h1 className={`${styles.tagLine}`}>Developer</h1>
+        <h1 className={`${styles.tagLine}`}>UX UI Enthusiast</h1>
       </div>
-      <div className='flex absolute bottom-52 px-12 w-full items-center justify-between'>
+      <div className='flex items-center justify-between'>
         <div className='flex flex-col'>
           <span className={`${styles.name} tracking-wide`}>Jordon</span>
           <span className={`${styles.name} tracking-wide`}>Jensen</span>

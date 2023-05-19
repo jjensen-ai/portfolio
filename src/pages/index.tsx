@@ -6,11 +6,9 @@ export default function Home() {
   return (
     <main>
       <div className={`${styles.contentContainer}`}>
+        <NavBar />
         <div className={`${styles.scrollingWrapper}`}>
-          <div className={`${styles.scrollingSpeed}`}>
-            <NavBar />
-            <Content />
-          </div>
+          <Content />
         </div>
       </div>
     </main>

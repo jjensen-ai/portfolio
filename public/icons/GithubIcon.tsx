@@ -1,6 +1,4 @@
 export default function GithubIcon({
-  width = 2,
-  height = 2,
   className = '',
 }: {
   width?: number;

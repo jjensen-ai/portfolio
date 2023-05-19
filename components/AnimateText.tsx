@@ -12,9 +12,11 @@ export default function AnimatedText({ word = '' }: { word: string }) {
   const letter = {
     visible: {
       opacity: 1,
-      top: [5, -10, 5, 0],
+      top: [0, 5, -10, 5, 0],
       transition: {
-        duration: 0.75,
+        duration: 1,
+        repeat: 3,
+        repeatDelay: 4,
       },
     },
   };
